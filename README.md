@@ -19,8 +19,9 @@
 ## jsp_example
 
 ## php_example
-1. 按下「XAMPP Control Panel」的「Explorer」
-2. 將 `php_example` 資料夾放置於 `htdocs` 資料夾中
-3. 使用瀏覽器訪問 [http://localhost/php_example/](http://localhost/php_example/)
-4. 於「文字輸出欄位」輸入欲查詢的名稱，並按下「送出」
-5. 若該名稱存在於資料庫，將於頁面上列出
+1. 以系統管理員身分執行「XAMPP Control Panel」
+2. 按下「Explorer」
+3. 將 `php_example` 資料夾放置於 `htdocs` 資料夾中
+4. 使用瀏覽器訪問 [http://localhost/php_example/](http://localhost/php_example/)
+5. 於「文字輸出欄位」輸入欲查詢的名稱，並按下「送出」
+6. 若該名稱存在於資料庫，將於頁面上列出名稱
