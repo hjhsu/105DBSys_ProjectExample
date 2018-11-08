@@ -1,7 +1,7 @@
 <%@ page contentType="text/html; charset=big5" import="java.sql.*, java.util.*" %> 
 <form name="form1" method="post" action="" >
-ï¿½ï¿½rï¿½ï¿½Xï¿½ï¿½ï¿½: <input name="MyHead">
-<input type="submit" value="ï¿½eï¿½X">
+¤å¦r¿é¥XÄæ¦ì: <input name="MyHead">
+<input type="submit" value="°e¥X">
 </form>
 <%
 	String head = request.getParameter("MyHead");
