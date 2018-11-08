@@ -15,8 +15,19 @@
 8. 進入資料庫 `testdb` 並匯入 `db/init.sql`
 
 ## db_example
+1. 
 
 ## jsp_example
+1. 以系統管理員身分執行「XAMPP Control Panel」
+2. 按下「Explorer」
+3. 將 `jsp_example` 資料夾放置於 `Tomcat/webapps` 資料夾中
+4. 於 [Download Connector/J](https://dev.mysql.com/downloads/connector/j/) 頁面下載「JDBC Driver for MySQL (Connector/J)」
+    - 選擇「Platform Independent」，並點擊「Download」下載壓縮檔
+5. 將壓縮檔中的 `mysql-connector-java-8.X.XX.jar` 放置於 `Tomcat/lib`
+6. 按下「Tomcat」的「Start」
+7. 使用瀏覽器訪問 [http://localhost:8080/jsp_example/](http://localhost:8080/jsp_example/)
+8. 於「文字輸出欄位」輸入欲查詢的名稱，並按下「送出」
+9. 若該名稱存在於資料庫，將於頁面上列出描述
 
 ## php_example
 1. 以系統管理員身分執行「XAMPP Control Panel」
