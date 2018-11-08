@@ -15,7 +15,23 @@
 8. 進入資料庫 `testdb` 並匯入 `db/init.sql`
 
 ## db_example
-1. 
+1. 編譯 `.java` 檔
+    ```bash
+    javac -cp ".;.\mysql-connector-java-5.1.40-bin.jar" .\db_example\*.java
+    ```
+2. 執行「MyAppServer」或「MyEchoServer」
+    ```bash
+    java -cp ".;.\mysql-connector-java-5.1.40-bin.jar" db_example.MyAppServer
+    java db_example.MyEchoServer
+    ```
+3. 執行「MyC1Client」或「MyCCClient」
+    ```bash
+    java db_example.MyC1Client
+    java db_example.MyC1Client
+    ```
+4. 於 Client 輸入文字內容，將可得到由 Server 回傳的回應
+    - 若連到 MyAppServer，會自資料庫查詢該名稱，若該名稱存在，會印出描述
+    - 若連到 MyEchoServer，會直接回傳輸入內容
 
 ## jsp_example
 1. 以系統管理員身分執行「XAMPP Control Panel」
