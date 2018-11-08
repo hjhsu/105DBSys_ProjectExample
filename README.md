@@ -27,7 +27,7 @@
 3. 執行 `MyC1Client` 或 `MyCCClient`
     ```bash
     java db_example.MyC1Client
-    java db_example.MyC1Client
+    java db_example.MyCCClient
     ```
 4. 於 Client 輸入文字內容，將可得到由 Server 回傳的回應
     - 若連到 MyAppServer，會自資料庫查詢該名稱，若該名稱存在，會印出描述
