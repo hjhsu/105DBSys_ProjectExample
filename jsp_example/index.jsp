@@ -1,15 +1,15 @@
 <%@ page contentType="text/html; charset=big5" import="java.sql.*, java.util.*" %> 
 <form name="form1" method="post" action="" >
-¤å¦r¿é¥XÄæ¦ì: <input name="MyHead">
-<input type="submit" value="°e¥X">
+ï¿½ï¿½rï¿½ï¿½Xï¿½ï¿½ï¿½: <input name="MyHead">
+<input type="submit" value="ï¿½eï¿½X">
 </form>
 <%
 	String head = request.getParameter("MyHead");
 	if (head != null) {
 		try {
-			Class.forName("com.mysql.jdbc.Driver").newInstance();
+			Class.forName("com.mysql.cj.jdbc.Driver").newInstance();
 			
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/testdb?user=hj&password=test1234&useSSL=true");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/testdb?user=hj&password=test1234&useSSL=true&serverTimezone=CST");
 			Statement stmt = conn.createStatement();
 			ResultSet rs = stmt.executeQuery("SELECT description FROM people where name LIKE \""+head+"%\";");
 			while(rs.next()) {
