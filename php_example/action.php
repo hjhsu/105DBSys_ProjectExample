@@ -10,10 +10,10 @@
 		$conn = mysqli_connect($dbhost, $dbuser, $dbpass) or die('Error with MySQL connection');
 		mysqli_query($conn, "SET NAMES 'utf8'");
 		mysqli_select_db($conn, $dbname);
-		$sql = "SELECT name FROM people where name LIKE \"".$MyHead."%\";";
+		$sql = "SELECT description FROM people where name LIKE \"".$MyHead."%\";";
 		$result = mysqli_query($conn, $sql) or die('MySQL query error');
 		while($row = mysqli_fetch_array($result)){
-			echo $row['name']."<p>";
+			echo $row['description']."<p>";
 		}
 	}
 ?>
