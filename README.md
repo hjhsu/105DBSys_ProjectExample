@@ -52,3 +52,22 @@
 4. 使用瀏覽器訪問 [http://localhost/php_example/](http://localhost/php_example/)
 5. 於`文字輸出欄位`輸入欲查詢的名稱，並按下`送出`
 6. 若該名稱存在於資料庫，將於頁面上列出名稱
+
+## python_example
+1. 開啟指令界面，並切換至 `python_example` 資料夾
+2. 安裝所需套件
+    ```bash
+    pip3 install -r requirements.txt
+    ```
+3. 若安裝 `mysqlclient` 時出現錯誤 `error: Microsoft Visual C++ 14.0 is required.`，請根據 Python 版本與位元數手動安裝對應套件檔案。
+    ```bash
+    pip3 install mysqlclient/mysqlclient-1.4.6-cp37-cp37m-win32.whl
+    ```
+    若無對應版本之 whl 檔案，可於 [這裡](https://www.lfd.uci.edu/~gohlke/pythonlibs/#mysql-python) 下載使用
+4. 執行 `python_example.py`
+    ```bash
+    python3 python_example.py
+    ```
+5. 使用瀏覽器訪問 [http://localhost:5000/](http://localhost:5000/)
+6. 於 `文字輸出欄位` 輸入欲查詢的名稱，並按下 `送出`
+7. 若該名稱存在於資料庫，將於頁面上列出名稱
