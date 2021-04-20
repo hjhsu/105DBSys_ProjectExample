@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 # coding=utf-8
 # -*- coding: UTF-8 -*-
-import sys
-from flask import Flask, jsonify, request
+from flask import Flask, request
 import MySQLdb
 
 app = Flask(__name__)
@@ -42,8 +41,3 @@ def action():
     for (description, ) in cursor.fetchall():
         results += "<p>{}</p>".format(description)
     return results
-
-
-if __name__ == "__main__":
-    app.run(debug=False, host='0.0.0.0', port=5000)
-    sys.exit()

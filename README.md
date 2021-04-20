@@ -64,9 +64,13 @@
     pip3 install mysqlclient/mysqlclient-1.4.6-cp37-cp37m-win32.whl
     ```
     若無對應版本之 whl 檔案，可於 [這裡](https://www.lfd.uci.edu/~gohlke/pythonlibs/#mysql-python) 下載使用
-4. 執行 `python_example.py`
+4. 使用 Flask 啟動服務
     ```bash
-    python3 python_example.py
+    flask run
+    ```
+    或
+    ```bash
+    python3 -m flask run
     ```
 5. 使用瀏覽器訪問 [http://localhost:5000/](http://localhost:5000/)
 6. 於 `文字輸出欄位` 輸入欲查詢的名稱，並按下 `送出`
