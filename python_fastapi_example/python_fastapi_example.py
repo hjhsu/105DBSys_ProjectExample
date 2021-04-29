@@ -1,13 +1,14 @@
 #!/usr/bin/env python3
 # coding=utf-8
 # -*- coding: UTF-8 -*-
-from flask import Flask, request
+from fastapi import FastAPI, Form
+from fastapi.responses import HTMLResponse
 import MySQLdb
 
-app = Flask(__name__)
+app = FastAPI()
 
 
-@app.route('/')
+@app.get('/', response_class=HTMLResponse)
 def index():
     form = """
     <form method="post" action="/action" >
@@ -18,10 +19,8 @@ def index():
     return form
 
 
-@app.route('/action', methods=['POST'])
-def action():
-    # 取得輸入的文字
-    my_head = request.form.get("my_head")
+@app.post('/action', response_class=HTMLResponse)
+def action(my_head: str = Form(default='')):
     # 建立資料庫連線
     conn = MySQLdb.connect(host="127.0.0.1",
                            user="hj",
