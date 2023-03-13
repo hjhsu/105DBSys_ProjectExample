@@ -43,6 +43,7 @@
 6. 按下 `Tomcat` 的 `Start`
 7. 使用瀏覽器訪問 [http://localhost:8080/jsp_example/](http://localhost:8080/jsp_example/)
 8. 於`文字輸出欄位`輸入欲查詢的名稱，並按下`送出`
+    - 如果出現錯誤請將`index.jsp`中`DriverManager.getConnection`的`serverTimezone`從`CST`改成`GMT%2B8`
 9. 若該名稱存在於資料庫，將於頁面上列出描述
 
 ## php_example
